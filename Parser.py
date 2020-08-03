@@ -1,5 +1,5 @@
 # imports
-import re
+import regex
 import pandas as pd
 import json
 from glob import glob
@@ -9,6 +9,7 @@ from bs4 import BeautifulSoup as bs4
 
 # parser
 class Parser:
+
     """
     При mtype='vk' в path нужно передать путь к папке со всеми сообщениями.
     При mtype='tg' в path нужно передать директорию с JSON-файлами.
@@ -40,7 +41,7 @@ class Parser:
                 with open(k, encoding='windows-1251') as obj:
                     contents = obj.read()
 
-                msg = re.findall(r'(?<=<div>).+?(?=<div class="kludges"><div class="attachment">|<div class="kludges">|</div>)', contents)
+                msg = regex.findall(r'(?<=<div>).+?(?=<div class="kludges"><div class="attachment">|<div class="kludges">|</div>)', contents)
                 text.extend(msg)
 
         else:
