@@ -9,8 +9,8 @@ import seaborn as sns
 from sklearn.metrics import f1_score
 
 
-vect = load(r'/mnt/hdd/EMOTION IDENTIFICATION/model/diff_vect.joblib')
-model = load(r'/mnt/hdd/EMOTION IDENTIFICATION/model/diff_718.joblib')
+vect = load(r'PASTE YOUR PATH HERE')
+model = load(r'PASTE YOUR PATH HERE')
 lemma = RNNMorphPredictor(language="ru")
 
 
