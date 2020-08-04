@@ -6,9 +6,9 @@ from glob import glob
 import dpath.util as dp
 import html
 
+
 # parser
 class Parser:
-
     """
     High-level parser for text messages requested from VK and Telegram
     """
@@ -39,7 +39,8 @@ class Parser:
                 with open(k, encoding='windows-1251') as obj:
                     contents = obj.read()
 
-                msg = regex.findall(r'(?<=<div>).+?(?=<div class="kludges"><div class="attachment">|<div class="kludges">|</div>)', contents)
+                msg = regex.findall(r'(?<=<div>).+?(?=<div class="kludges"><div class="attachment">|<div '
+                                    r'class="kludges">|</div>)', contents)
                 text.extend(msg)
 
         else:
@@ -48,5 +49,5 @@ class Parser:
         df = pd.DataFrame(data={'text': text})
         df = df[df.text.str.len() > 0]
         df.text = df.text.apply(html.unescape)
-        
+
         return df

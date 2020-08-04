@@ -1,5 +1,5 @@
 # AIST
-This repository contains materials for the AIST conference.
+This repository contains materials for the _AIST_ conference.
 
 ## Data
 Both datasets have been **manually** anonymized due to VK's privacy policy. Besides, they were normalized in a bit different way comparing with their initial versions, used in this study.
@@ -18,7 +18,7 @@ Both datasets have been **manually** anonymized due to VK's privacy policy. Besi
 
 It requires the path to the folder with messages and recursively iterates through all files. 
 
-VK parser looks into `\*.html` files and TG parser checks `\*.json` files.
+VK parser looks into `*.html` files and TG parser checks `*.json` files.
 
 ### Usage
 `from Parser import Parser`
