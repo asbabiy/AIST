@@ -26,3 +26,5 @@ VK parser looks into `\*.html` files and TG parser checks `\*.json` files.
 `parser = Parser('PATH', mtype='tg') # parse TG messages`
 
 `parser = Parser('PATH', mtype='vk') # parse VK messages`
+
+`parser.parse() # returns a DataFrame with text messages`
