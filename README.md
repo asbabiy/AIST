@@ -21,12 +21,6 @@ It requires the path to the folder with messages and recursively iterates throug
 VK parser looks into `\*.html` files and TG parser checks `\*.json` files.
 
 ### Usage
-<<<<<<< HEAD
 `from Parser import Parser`
 `parser = Parser('PATH', mtype='tg') # parse TG messages`
 `parser = Parser('PATH', mtype='vk') # parse VK messages`
-=======
-`from Parser import Parser
-parser = Parser('PATH', mtype='tg') # parse TG messages
-parser = Parser('PATH', mtype='vk') # parse VK messages`
->>>>>>> master
