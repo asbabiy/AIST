@@ -5,14 +5,12 @@ import json
 from glob import glob
 import dpath.util as dp
 import html
-from bs4 import BeautifulSoup as bs4
 
 # parser
 class Parser:
 
     """
-    При mtype='vk' в path нужно передать путь к папке со всеми сообщениями.
-    При mtype='tg' в path нужно передать директорию с JSON-файлами.
+    High-level parser for text messages requested from VK and Telegram
     """
 
     def __init__(self, path, mtype=None):
