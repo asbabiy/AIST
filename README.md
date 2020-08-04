@@ -13,8 +13,14 @@ Both datasets have been **manually** anonymized due to VK's privacy policy. Besi
 
 `vect.joblib` is a TF-IDF vectorizer for the aforementioned model.
 
-## EmotionPredictor
-`EmotionPredictor.py` is a pipeline for preprocessing, normalizing text messages, predicting emotions.
-
 ## Parser
-`Parser.py` is a high-level parser for VK and Telegram text messages.
+`Parser.py` is a high-level parser for text messages requested from VK and Telegram.
+
+It requires the path to the folder with messages and recursively iterates through all files. 
+
+VK parser looks into `\*.html` files and TG parser checks `\*.json` files.
+
+### Usage
+`from Parser import Parser`
+`parser = Parser('PATH', mtype='tg') # parse TG messages`
+`parser = Parser('PATH', mtype='vk') # parse VK messages`
