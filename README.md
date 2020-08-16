@@ -6,7 +6,7 @@ Both datasets have been **manually** anonymized due to VK's privacy policy. Besi
 
 `msg_with_emoji.csv` is a small dataset (~10k samples), containing annotated messages with emoji.
 
-`train_data.csv` is a relatively large dataset (~54k samples; only half of the dataset is uploaded here).
+`train_data.csv` is a relatively large dataset (~54k samples; only half of the dataset is uploaded here, full version can be uploaded later).
 
 ## Model
 `model.joblib` is a trained MaxEnt model for predicting emotions in Russian text messages.
