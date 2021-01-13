@@ -9,7 +9,7 @@ Both datasets have been **manually** anonymized due to VK's privacy policy. Besi
 `train_data.csv` is a relatively large dataset (~54k samples; only half of the dataset is uploaded here, full version can be uploaded later).
 
 ## Model
-`model.joblib` is a trained MaxEnt model for predicting emotions in Russian text messages.
+`model.joblib` is a trained logistic regression model for predicting emotions in Russian text messages.
 
 `vect.joblib` is a TF-IDF vectorizer for the aforementioned model.
 
